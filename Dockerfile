@@ -1,4 +1,4 @@
-FROM node:10.1.0-alpine
+FROM --platform=linux/arm/v7 node:10-alpine
 
 WORKDIR /app
 
