@@ -26,7 +26,7 @@ docker build . -t localtunnel-server
 ### Run Docker container
 
 ```
-docker run -d --restart always --name localtunnel --net host localtunnel-server --port 3000
+docker run -d --restart always --name localtunnel-server --net host localtunnel-server --port 3000
 ```
 
 The localtunnel server is now running and waiting for client requests on port 3000. You will most likely want to set up a reverse proxy to listen on port 80 (or start localtunnel on port 80 directly) using this [nginx Docker image built for this purpose](https://github.com/gilhardl/localtunnel-nginx-pi).
